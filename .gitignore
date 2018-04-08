@@ -1,0 +1,11 @@
+.metadata/**
+**.bak
+**.*-bak
+**.ses
+**.net
+**.dsn
+**.rules
+**.lib
+TouchTest/Release
+TouchTest/.settings
+RemoteSystemsTempFiles/**

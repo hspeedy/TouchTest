@@ -1,0 +1,232 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:tjctm24028_spi
+LIBS:TouchTest-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TJCTM24028_SPI U1
+U 1 1 5AC9A5E4
+P 2650 3200
+F 0 "U1" H 3720 4110 60  0000 C CNN
+F 1 "TJCTM24028_SPI" H 3710 4200 60  0000 C CNN
+F 2 "TJCTM24028_SPI:tjctm24028_spi" H 2650 3200 60  0001 C CNN
+F 3 "" H 2650 3200 60  0001 C CNN
+	1    2650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NodeMCU_1.0_(ESP-12E) U2
+U 1 1 5AC9A607
+P 6350 2700
+F 0 "U2" H 6350 3550 60  0000 C CNN
+F 1 "NodeMCU_1.0_(ESP-12E)" H 6350 1850 60  0000 C CNN
+F 2 "ESP8266:NodeMCU1.0(12-E)" H 6300 1700 60  0000 C CNN
+F 3 "" H 5750 1850 60  0000 C CNN
+	1    6350 2700
+	1    0    0    -1  
+$EndComp
+Text Label 7600 2200 2    60   ~ 0
+D2
+Text Label 7600 2300 2    60   ~ 0
+D3
+Text Label 7600 2400 2    60   ~ 0
+D4
+Text Label 7600 2700 2    60   ~ 0
+D5
+Text Label 7600 2800 2    60   ~ 0
+D6
+Text Label 7600 2900 2    60   ~ 0
+D7
+Text Label 7600 3000 2    60   ~ 0
+D8
+Wire Wire Line
+	7150 2200 7600 2200
+Wire Wire Line
+	7150 2300 7600 2300
+Wire Wire Line
+	7150 2400 7600 2400
+Wire Wire Line
+	7150 2700 7600 2700
+Wire Wire Line
+	7150 2800 7600 2800
+Wire Wire Line
+	7150 2900 7600 2900
+Wire Wire Line
+	7150 3000 7600 3000
+Wire Wire Line
+	7150 3300 7600 3300
+$Comp
+L +3.3V #PWR4
+U 1 1 5AC9A758
+P 5150 3000
+F 0 "#PWR4" H 5150 2850 50  0001 C CNN
+F 1 "+3.3V" H 5150 3140 50  0000 C CNN
+F 2 "" H 5150 3000 50  0001 C CNN
+F 3 "" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 5AC9A774
+P 7600 3300
+F 0 "#PWR5" H 7600 3050 50  0001 C CNN
+F 1 "GND" H 7600 3150 50  0000 C CNN
+F 2 "" H 7600 3300 50  0001 C CNN
+F 3 "" H 7600 3300 50  0001 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2800 1900
+NoConn ~ 2900 1900
+NoConn ~ 3000 1900
+NoConn ~ 3100 1900
+Wire Wire Line
+	2800 3100 2800 3500
+Wire Wire Line
+	2900 3100 2900 3500
+Wire Wire Line
+	3000 3100 3000 3500
+Wire Wire Line
+	3100 3100 3100 3500
+Wire Wire Line
+	3200 3100 3200 3500
+Wire Wire Line
+	3300 3100 3300 3500
+Wire Wire Line
+	3400 3100 3400 3500
+Wire Wire Line
+	3500 3100 3500 3500
+Wire Wire Line
+	3600 3100 3600 3500
+Wire Wire Line
+	3700 3100 3700 3500
+Wire Wire Line
+	3800 3100 3800 3500
+Wire Wire Line
+	3900 3100 3900 3500
+Wire Wire Line
+	4000 3100 4000 3500
+Wire Wire Line
+	5550 3000 5150 3000
+$Comp
+L +3.3V #PWR1
+U 1 1 5AC9AA1D
+P 2800 3500
+F 0 "#PWR1" H 2800 3350 50  0001 C CNN
+F 1 "+3.3V" H 2900 3650 50  0000 C CNN
+F 2 "" H 2800 3500 50  0001 C CNN
+F 3 "" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR3
+U 1 1 5AC9AA36
+P 3500 3500
+F 0 "#PWR3" H 3500 3350 50  0001 C CNN
+F 1 "+3.3V" H 3500 3640 50  0000 C CNN
+F 2 "" H 3500 3500 50  0001 C CNN
+F 3 "" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5AC9AA4D
+P 2900 3500
+F 0 "#PWR2" H 2900 3250 50  0001 C CNN
+F 1 "GND" H 2900 3350 50  0000 C CNN
+F 2 "" H 2900 3500 50  0001 C CNN
+F 3 "" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+Text Label 3000 3500 1    60   ~ 0
+D8
+Text Label 3100 3500 1    60   ~ 0
+D4
+Text Label 3200 3500 1    60   ~ 0
+D3
+Text Label 3300 3500 1    60   ~ 0
+D7
+Text Label 3400 3500 1    60   ~ 0
+D5
+Text Label 3600 3500 1    60   ~ 0
+D6
+Text Label 3700 3500 1    60   ~ 0
+D5
+Text Label 3800 3500 1    60   ~ 0
+D2
+Text Label 3900 3500 1    60   ~ 0
+D7
+Text Label 4000 3500 1    60   ~ 0
+D6
+NoConn ~ 4100 3100
+NoConn ~ 7150 3100
+NoConn ~ 7150 3200
+NoConn ~ 7150 3400
+NoConn ~ 5550 3300
+NoConn ~ 5550 3400
+NoConn ~ 5550 3200
+NoConn ~ 5550 3100
+NoConn ~ 5550 2900
+NoConn ~ 5550 2800
+NoConn ~ 5550 2700
+NoConn ~ 5550 2600
+NoConn ~ 5550 2500
+NoConn ~ 5550 2400
+NoConn ~ 5550 2300
+NoConn ~ 5550 2200
+NoConn ~ 5550 2100
+NoConn ~ 5550 2000
+NoConn ~ 7150 2500
+NoConn ~ 7150 2600
+NoConn ~ 7150 2000
+NoConn ~ 7150 2100
+$EndSCHEMATC
